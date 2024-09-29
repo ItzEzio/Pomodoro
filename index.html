@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">   
+    <script src="js/index.js"></script>
+    <link rel="icon" type="image/png" href="img/tomato.png">
+    <title>Pomodoro</title>
+</head>
+<body onload="start()">
+    
+    <audio id="myAudio">
+        <source src="sound/alarm.mp3" type="audio/mp3">
+    </audio>
+
+
+        <div class="background">
+            <center>
+            <h1 class="title_pomodoro">Pomodoro</h1>
+
+            <a id="clock" onchange="timer()"></a>
+
+            <div class="timer">
+            <input type="submit" id="timer" onclick="start_timer()" value="Start">  
+            <input type="submit" id="reset_timer" onclick="reset()" value="Reset">
+            
+            
+            </div>
+            <a id="pause_text">Pause</a>
+            <div class="relax_timer">
+            <input type="submit" id="pause5" onclick="pause5()" value="5:00">
+            <input type="submit" id="pause15" onclick="pause15()" value="15:00">
+        </div>
+        <h1></h1>
+        <div>
+            
+            <a id="sessions">Sessions:</a>
+        </div>
+    </center>
+        </div>
+
+    
+</body>
+</html>
